@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onClick(sender: AnyObject) {
+        (HMService.sharedService() as HMService).openChat(self, forApp: APPID)
+    }
 }
 

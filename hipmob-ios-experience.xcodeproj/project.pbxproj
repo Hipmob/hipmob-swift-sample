@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B17065341AA45B230080E311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17065331AA45B230080E311 /* AppDelegate.swift */; };
+		B17065361AA45B230080E311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17065351AA45B230080E311 /* ViewController.swift */; };
+		B17065391AA45B230080E311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17065371AA45B230080E311 /* Main.storyboard */; };
+		B170653B1AA45B230080E311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B170653A1AA45B230080E311 /* Images.xcassets */; };
+		B170653E1AA45B230080E311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B170653C1AA45B230080E311 /* LaunchScreen.xib */; };
+		B170654A1AA45B230080E311 /* hipmob_swift_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17065491AA45B230080E311 /* hipmob_swift_sampleTests.swift */; };
+		B17065541AA45F260080E311 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065531AA45F260080E311 /* QuartzCore.framework */; };
+		B17065561AA45F2C0080E311 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065551AA45F2C0080E311 /* Security.framework */; };
+		B17065581AA45F350080E311 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065571AA45F350080E311 /* libicucore.dylib */; };
+		B170655A1AA45F3C0080E311 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065591AA45F3C0080E311 /* CoreData.framework */; };
+		B170655C1AA45F440080E311 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B170655B1AA45F440080E311 /* CFNetwork.framework */; };
+		B170655E1AA45F4B0080E311 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B170655D1AA45F4B0080E311 /* UIKit.framework */; };
+		B17065601AA45F560080E311 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B170655F1AA45F560080E311 /* Foundation.framework */; };
+		B17065621AA45F5D0080E311 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065611AA45F5D0080E311 /* CoreGraphics.framework */; };
+		B17065641AA45F640080E311 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065631AA45F640080E311 /* CoreTelephony.framework */; };
+		B17065661AA45FB00080E311 /* hipmob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065651AA45FB00080E311 /* hipmob.framework */; };
+		B17065981AA45FE80080E311 /* 7-hipmob-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065671AA45FE70080E311 /* 7-hipmob-back.png */; };
+		B17065991AA45FE80080E311 /* 7-hipmob-chatbubble-from.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065681AA45FE70080E311 /* 7-hipmob-chatbubble-from.png */; };
+		B170659A1AA45FE80080E311 /* 7-hipmob-chatbubble-from@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065691AA45FE70080E311 /* 7-hipmob-chatbubble-from@2x.png */; };
+		B170659B1AA45FE80080E311 /* 7-hipmob-chatbubble-to.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656A1AA45FE70080E311 /* 7-hipmob-chatbubble-to.png */; };
+		B170659C1AA45FE80080E311 /* 7-hipmob-chatbubble-to@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656B1AA45FE70080E311 /* 7-hipmob-chatbubble-to@2x.png */; };
+		B170659D1AA45FE80080E311 /* 7-hipmob-input-background-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656C1AA45FE70080E311 /* 7-hipmob-input-background-landscape.png */; };
+		B170659E1AA45FE80080E311 /* 7-hipmob-input-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656D1AA45FE70080E311 /* 7-hipmob-input-background.png */; };
+		B170659F1AA45FE80080E311 /* 7-hipmob-input-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656E1AA45FE70080E311 /* 7-hipmob-input-background@2x.png */; };
+		B17065A01AA45FE80080E311 /* 7-hipmob-operator-available.png in Resources */ = {isa = PBXBuildFile; fileRef = B170656F1AA45FE70080E311 /* 7-hipmob-operator-available.png */; };
+		B17065A11AA45FE80080E311 /* 7-hipmob-operator-connecting.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065701AA45FE70080E311 /* 7-hipmob-operator-connecting.png */; };
+		B17065A21AA45FE80080E311 /* 7-hipmob-operator-offline.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065711AA45FE70080E311 /* 7-hipmob-operator-offline.png */; };
+		B17065A31AA45FE80080E311 /* 7-hipmob-operator-unavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065721AA45FE70080E311 /* 7-hipmob-operator-unavailable.png */; };
+		B17065A41AA45FE80080E311 /* 7-hipmob-send-active.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065731AA45FE70080E311 /* 7-hipmob-send-active.png */; };
+		B17065A51AA45FE80080E311 /* 7-hipmob-send-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065741AA45FE70080E311 /* 7-hipmob-send-inactive.png */; };
+		B17065A61AA45FE80080E311 /* 7-hipmob-send-instate.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065751AA45FE70080E311 /* 7-hipmob-send-instate.png */; };
+		B17065A71AA45FE80080E311 /* 7-hipmob-webview-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065761AA45FE70080E311 /* 7-hipmob-webview-back.png */; };
+		B17065A81AA45FE80080E311 /* 7-hipmob-webview-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065771AA45FE70080E311 /* 7-hipmob-webview-back@2x.png */; };
+		B17065A91AA45FE80080E311 /* 7-hipmob-webview-forward.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065781AA45FE70080E311 /* 7-hipmob-webview-forward.png */; };
+		B17065AA1AA45FE80080E311 /* 7-hipmob-webview-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065791AA45FE70080E311 /* 7-hipmob-webview-forward@2x.png */; };
+		B17065AB1AA45FE80080E311 /* attach.overstate.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657A1AA45FE70080E311 /* attach.overstate.png */; };
+		B17065AC1AA45FE80080E311 /* attach.overstate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657B1AA45FE70080E311 /* attach.overstate@2x.png */; };
+		B17065AD1AA45FE80080E311 /* attach.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657C1AA45FE70080E311 /* attach.png */; };
+		B17065AE1AA45FE80080E311 /* attach@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657D1AA45FE70080E311 /* attach@2x.png */; };
+		B17065AF1AA45FE80080E311 /* hipmob-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657E1AA45FE70080E311 /* hipmob-back.png */; };
+		B17065B01AA45FE80080E311 /* hipmob-chat-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B170657F1AA45FE70080E311 /* hipmob-chat-pressed.png */; };
+		B17065B11AA45FE80080E311 /* hipmob-chat-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065801AA45FE70080E311 /* hipmob-chat-pressed@2x.png */; };
+		B17065B21AA45FE80080E311 /* hipmob-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065811AA45FE70080E311 /* hipmob-chat.png */; };
+		B17065B31AA45FE80080E311 /* hipmob-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065821AA45FE70080E311 /* hipmob-chat@2x.png */; };
+		B17065B41AA45FE80080E311 /* hipmob-chatbubble-from.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065831AA45FE70080E311 /* hipmob-chatbubble-from.png */; };
+		B17065B51AA45FE80080E311 /* hipmob-chatbubble-from@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065841AA45FE70080E311 /* hipmob-chatbubble-from@2x.png */; };
+		B17065B61AA45FE80080E311 /* hipmob-chatbubble-to.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065851AA45FE70080E311 /* hipmob-chatbubble-to.png */; };
+		B17065B71AA45FE80080E311 /* hipmob-chatbubble-to@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065861AA45FE70080E311 /* hipmob-chatbubble-to@2x.png */; };
+		B17065B81AA45FE80080E311 /* hipmob-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B17065871AA45FE70080E311 /* hipmob-Info.plist */; };
+		B17065B91AA45FE80080E311 /* hipmob-input-background-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065881AA45FE70080E311 /* hipmob-input-background-landscape.png */; };
+		B17065BA1AA45FE80080E311 /* hipmob-input-background.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065891AA45FE80080E311 /* hipmob-input-background.png */; };
+		B17065BB1AA45FE80080E311 /* hipmob-input-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658A1AA45FE80080E311 /* hipmob-input-background@2x.png */; };
+		B17065BC1AA45FE80080E311 /* hipmob-operator-available.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658B1AA45FE80080E311 /* hipmob-operator-available.png */; };
+		B17065BD1AA45FE80080E311 /* hipmob-operator-connecting.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658C1AA45FE80080E311 /* hipmob-operator-connecting.png */; };
+		B17065BE1AA45FE80080E311 /* hipmob-operator-offline.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658D1AA45FE80080E311 /* hipmob-operator-offline.png */; };
+		B17065BF1AA45FE80080E311 /* hipmob-operator-unavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658E1AA45FE80080E311 /* hipmob-operator-unavailable.png */; };
+		B17065C01AA45FE80080E311 /* hipmob-send-active.png in Resources */ = {isa = PBXBuildFile; fileRef = B170658F1AA45FE80080E311 /* hipmob-send-active.png */; };
+		B17065C11AA45FE80080E311 /* hipmob-send-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065901AA45FE80080E311 /* hipmob-send-inactive.png */; };
+		B17065C21AA45FE80080E311 /* hipmob-send-instate.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065911AA45FE80080E311 /* hipmob-send-instate.png */; };
+		B17065C31AA45FE80080E311 /* hipmob-webview-back.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065921AA45FE80080E311 /* hipmob-webview-back.png */; };
+		B17065C41AA45FE80080E311 /* hipmob-webview-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065931AA45FE80080E311 /* hipmob-webview-back@2x.png */; };
+		B17065C51AA45FE80080E311 /* hipmob-webview-forward.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065941AA45FE80080E311 /* hipmob-webview-forward.png */; };
+		B17065C61AA45FE80080E311 /* hipmob-webview-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065951AA45FE80080E311 /* hipmob-webview-forward@2x.png */; };
+		B17065C71AA45FE80080E311 /* imageplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065961AA45FE80080E311 /* imageplaceholder.png */; };
+		B17065C81AA45FE80080E311 /* imageplaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B17065971AA45FE80080E311 /* imageplaceholder@2x.png */; };
+		B17065CC1AA4642D0080E311 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17065CB1AA4642D0080E311 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B17065441AA45B230080E311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17065261AA45B220080E311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B170652D1AA45B230080E311;
+			remoteInfo = "hipmob-swift-sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B170652E1AA45B230080E311 /* hipmob-swift-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hipmob-swift-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17065321AA45B230080E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17065331AA45B230080E311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B17065351AA45B230080E311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B17065381AA45B230080E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B170653A1AA45B230080E311 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B170653D1AA45B230080E311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B17065431AA45B230080E311 /* hipmob-swift-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hipmob-swift-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17065481AA45B230080E311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17065491AA45B230080E311 /* hipmob_swift_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hipmob_swift_sampleTests.swift; sourceTree = "<group>"; };
+		B17065531AA45F260080E311 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B17065551AA45F2C0080E311 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B17065571AA45F350080E311 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B17065591AA45F3C0080E311 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B170655B1AA45F440080E311 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B170655D1AA45F4B0080E311 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B170655F1AA45F560080E311 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B17065611AA45F5D0080E311 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B17065631AA45F640080E311 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B17065651AA45FB00080E311 /* hipmob.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = hipmob.framework; sourceTree = "<group>"; };
+		B17065671AA45FE70080E311 /* 7-hipmob-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-back.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-back.png"; sourceTree = "<group>"; };
+		B17065681AA45FE70080E311 /* 7-hipmob-chatbubble-from.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-chatbubble-from.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-chatbubble-from.png"; sourceTree = "<group>"; };
+		B17065691AA45FE70080E311 /* 7-hipmob-chatbubble-from@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-chatbubble-from@2x.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-chatbubble-from@2x.png"; sourceTree = "<group>"; };
+		B170656A1AA45FE70080E311 /* 7-hipmob-chatbubble-to.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-chatbubble-to.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-chatbubble-to.png"; sourceTree = "<group>"; };
+		B170656B1AA45FE70080E311 /* 7-hipmob-chatbubble-to@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-chatbubble-to@2x.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-chatbubble-to@2x.png"; sourceTree = "<group>"; };
+		B170656C1AA45FE70080E311 /* 7-hipmob-input-background-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-input-background-landscape.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-input-background-landscape.png"; sourceTree = "<group>"; };
+		B170656D1AA45FE70080E311 /* 7-hipmob-input-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-input-background.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-input-background.png"; sourceTree = "<group>"; };
+		B170656E1AA45FE70080E311 /* 7-hipmob-input-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-input-background@2x.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-input-background@2x.png"; sourceTree = "<group>"; };
+		B170656F1AA45FE70080E311 /* 7-hipmob-operator-available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-operator-available.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-operator-available.png"; sourceTree = "<group>"; };
+		B17065701AA45FE70080E311 /* 7-hipmob-operator-connecting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-operator-connecting.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-operator-connecting.png"; sourceTree = "<group>"; };
+		B17065711AA45FE70080E311 /* 7-hipmob-operator-offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-operator-offline.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-operator-offline.png"; sourceTree = "<group>"; };
+		B17065721AA45FE70080E311 /* 7-hipmob-operator-unavailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-operator-unavailable.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-operator-unavailable.png"; sourceTree = "<group>"; };
+		B17065731AA45FE70080E311 /* 7-hipmob-send-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-send-active.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-send-active.png"; sourceTree = "<group>"; };
+		B17065741AA45FE70080E311 /* 7-hipmob-send-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-send-inactive.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-send-inactive.png"; sourceTree = "<group>"; };
+		B17065751AA45FE70080E311 /* 7-hipmob-send-instate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-send-instate.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-send-instate.png"; sourceTree = "<group>"; };
+		B17065761AA45FE70080E311 /* 7-hipmob-webview-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-webview-back.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-webview-back.png"; sourceTree = "<group>"; };
+		B17065771AA45FE70080E311 /* 7-hipmob-webview-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-webview-back@2x.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-webview-back@2x.png"; sourceTree = "<group>"; };
+		B17065781AA45FE70080E311 /* 7-hipmob-webview-forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-webview-forward.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-webview-forward.png"; sourceTree = "<group>"; };
+		B17065791AA45FE70080E311 /* 7-hipmob-webview-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "7-hipmob-webview-forward@2x.png"; path = "hipmob.framework/Versions/A/Resources/7-hipmob-webview-forward@2x.png"; sourceTree = "<group>"; };
+		B170657A1AA45FE70080E311 /* attach.overstate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = attach.overstate.png; path = hipmob.framework/Versions/A/Resources/attach.overstate.png; sourceTree = "<group>"; };
+		B170657B1AA45FE70080E311 /* attach.overstate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "attach.overstate@2x.png"; path = "hipmob.framework/Versions/A/Resources/attach.overstate@2x.png"; sourceTree = "<group>"; };
+		B170657C1AA45FE70080E311 /* attach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = attach.png; path = hipmob.framework/Versions/A/Resources/attach.png; sourceTree = "<group>"; };
+		B170657D1AA45FE70080E311 /* attach@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "attach@2x.png"; path = "hipmob.framework/Versions/A/Resources/attach@2x.png"; sourceTree = "<group>"; };
+		B170657E1AA45FE70080E311 /* hipmob-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-back.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-back.png"; sourceTree = "<group>"; };
+		B170657F1AA45FE70080E311 /* hipmob-chat-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chat-pressed.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chat-pressed.png"; sourceTree = "<group>"; };
+		B17065801AA45FE70080E311 /* hipmob-chat-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chat-pressed@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chat-pressed@2x.png"; sourceTree = "<group>"; };
+		B17065811AA45FE70080E311 /* hipmob-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chat.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chat.png"; sourceTree = "<group>"; };
+		B17065821AA45FE70080E311 /* hipmob-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chat@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chat@2x.png"; sourceTree = "<group>"; };
+		B17065831AA45FE70080E311 /* hipmob-chatbubble-from.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chatbubble-from.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chatbubble-from.png"; sourceTree = "<group>"; };
+		B17065841AA45FE70080E311 /* hipmob-chatbubble-from@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chatbubble-from@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chatbubble-from@2x.png"; sourceTree = "<group>"; };
+		B17065851AA45FE70080E311 /* hipmob-chatbubble-to.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chatbubble-to.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chatbubble-to.png"; sourceTree = "<group>"; };
+		B17065861AA45FE70080E311 /* hipmob-chatbubble-to@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-chatbubble-to@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-chatbubble-to@2x.png"; sourceTree = "<group>"; };
+		B17065871AA45FE70080E311 /* hipmob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "hipmob-Info.plist"; path = "hipmob.framework/Versions/A/Resources/hipmob-Info.plist"; sourceTree = "<group>"; };
+		B17065881AA45FE70080E311 /* hipmob-input-background-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-input-background-landscape.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-input-background-landscape.png"; sourceTree = "<group>"; };
+		B17065891AA45FE80080E311 /* hipmob-input-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-input-background.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-input-background.png"; sourceTree = "<group>"; };
+		B170658A1AA45FE80080E311 /* hipmob-input-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-input-background@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-input-background@2x.png"; sourceTree = "<group>"; };
+		B170658B1AA45FE80080E311 /* hipmob-operator-available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-operator-available.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-operator-available.png"; sourceTree = "<group>"; };
+		B170658C1AA45FE80080E311 /* hipmob-operator-connecting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-operator-connecting.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-operator-connecting.png"; sourceTree = "<group>"; };
+		B170658D1AA45FE80080E311 /* hipmob-operator-offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-operator-offline.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-operator-offline.png"; sourceTree = "<group>"; };
+		B170658E1AA45FE80080E311 /* hipmob-operator-unavailable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-operator-unavailable.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-operator-unavailable.png"; sourceTree = "<group>"; };
+		B170658F1AA45FE80080E311 /* hipmob-send-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-send-active.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-send-active.png"; sourceTree = "<group>"; };
+		B17065901AA45FE80080E311 /* hipmob-send-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-send-inactive.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-send-inactive.png"; sourceTree = "<group>"; };
+		B17065911AA45FE80080E311 /* hipmob-send-instate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-send-instate.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-send-instate.png"; sourceTree = "<group>"; };
+		B17065921AA45FE80080E311 /* hipmob-webview-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-webview-back.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-webview-back.png"; sourceTree = "<group>"; };
+		B17065931AA45FE80080E311 /* hipmob-webview-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-webview-back@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-webview-back@2x.png"; sourceTree = "<group>"; };
+		B17065941AA45FE80080E311 /* hipmob-webview-forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-webview-forward.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-webview-forward.png"; sourceTree = "<group>"; };
+		B17065951AA45FE80080E311 /* hipmob-webview-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hipmob-webview-forward@2x.png"; path = "hipmob.framework/Versions/A/Resources/hipmob-webview-forward@2x.png"; sourceTree = "<group>"; };
+		B17065961AA45FE80080E311 /* imageplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imageplaceholder.png; path = hipmob.framework/Versions/A/Resources/imageplaceholder.png; sourceTree = "<group>"; };
+		B17065971AA45FE80080E311 /* imageplaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imageplaceholder@2x.png"; path = "hipmob.framework/Versions/A/Resources/imageplaceholder@2x.png"; sourceTree = "<group>"; };
+		B17065C91AA460A20080E311 /* hipmob-swift-sample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "hipmob-swift-sample-Bridging-Header.h"; path = "hipmob-swift-sample/hipmob-swift-sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		B17065CB1AA4642D0080E311 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B170652B1AA45B230080E311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17065CC1AA4642D0080E311 /* SystemConfiguration.framework in Frameworks */,
+				B17065641AA45F640080E311 /* CoreTelephony.framework in Frameworks */,
+				B17065621AA45F5D0080E311 /* CoreGraphics.framework in Frameworks */,
+				B17065601AA45F560080E311 /* Foundation.framework in Frameworks */,
+				B170655E1AA45F4B0080E311 /* UIKit.framework in Frameworks */,
+				B170655C1AA45F440080E311 /* CFNetwork.framework in Frameworks */,
+				B170655A1AA45F3C0080E311 /* CoreData.framework in Frameworks */,
+				B17065581AA45F350080E311 /* libicucore.dylib in Frameworks */,
+				B17065561AA45F2C0080E311 /* Security.framework in Frameworks */,
+				B17065541AA45F260080E311 /* QuartzCore.framework in Frameworks */,
+				B17065661AA45FB00080E311 /* hipmob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17065401AA45B230080E311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B17065251AA45B220080E311 = {
+			isa = PBXGroup;
+			children = (
+				B17065CB1AA4642D0080E311 /* SystemConfiguration.framework */,
+				B17065CA1AA462400080E311 /* Hipmob Resources */,
+				B17065C91AA460A20080E311 /* hipmob-swift-sample-Bridging-Header.h */,
+				B17065651AA45FB00080E311 /* hipmob.framework */,
+				B17065631AA45F640080E311 /* CoreTelephony.framework */,
+				B17065611AA45F5D0080E311 /* CoreGraphics.framework */,
+				B170655F1AA45F560080E311 /* Foundation.framework */,
+				B170655D1AA45F4B0080E311 /* UIKit.framework */,
+				B170655B1AA45F440080E311 /* CFNetwork.framework */,
+				B17065591AA45F3C0080E311 /* CoreData.framework */,
+				B17065571AA45F350080E311 /* libicucore.dylib */,
+				B17065551AA45F2C0080E311 /* Security.framework */,
+				B17065531AA45F260080E311 /* QuartzCore.framework */,
+				B17065301AA45B230080E311 /* hipmob-swift-sample */,
+				B17065461AA45B230080E311 /* hipmob-swift-sampleTests */,
+				B170652F1AA45B230080E311 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B170652F1AA45B230080E311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B170652E1AA45B230080E311 /* hipmob-swift-sample.app */,
+				B17065431AA45B230080E311 /* hipmob-swift-sampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B17065301AA45B230080E311 /* hipmob-swift-sample */ = {
+			isa = PBXGroup;
+			children = (
+				B17065331AA45B230080E311 /* AppDelegate.swift */,
+				B17065351AA45B230080E311 /* ViewController.swift */,
+				B17065371AA45B230080E311 /* Main.storyboard */,
+				B170653A1AA45B230080E311 /* Images.xcassets */,
+				B170653C1AA45B230080E311 /* LaunchScreen.xib */,
+				B17065311AA45B230080E311 /* Supporting Files */,
+			);
+			path = "hipmob-swift-sample";
+			sourceTree = "<group>";
+		};
+		B17065311AA45B230080E311 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B17065321AA45B230080E311 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B17065461AA45B230080E311 /* hipmob-swift-sampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17065491AA45B230080E311 /* hipmob_swift_sampleTests.swift */,
+				B17065471AA45B230080E311 /* Supporting Files */,
+			);
+			path = "hipmob-swift-sampleTests";
+			sourceTree = "<group>";
+		};
+		B17065471AA45B230080E311 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B17065481AA45B230080E311 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B17065CA1AA462400080E311 /* Hipmob Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B17065671AA45FE70080E311 /* 7-hipmob-back.png */,
+				B17065681AA45FE70080E311 /* 7-hipmob-chatbubble-from.png */,
+				B17065691AA45FE70080E311 /* 7-hipmob-chatbubble-from@2x.png */,
+				B170656A1AA45FE70080E311 /* 7-hipmob-chatbubble-to.png */,
+				B170656B1AA45FE70080E311 /* 7-hipmob-chatbubble-to@2x.png */,
+				B170656C1AA45FE70080E311 /* 7-hipmob-input-background-landscape.png */,
+				B170656D1AA45FE70080E311 /* 7-hipmob-input-background.png */,
+				B170656E1AA45FE70080E311 /* 7-hipmob-input-background@2x.png */,
+				B170656F1AA45FE70080E311 /* 7-hipmob-operator-available.png */,
+				B17065701AA45FE70080E311 /* 7-hipmob-operator-connecting.png */,
+				B17065711AA45FE70080E311 /* 7-hipmob-operator-offline.png */,
+				B17065721AA45FE70080E311 /* 7-hipmob-operator-unavailable.png */,
+				B17065731AA45FE70080E311 /* 7-hipmob-send-active.png */,
+				B17065741AA45FE70080E311 /* 7-hipmob-send-inactive.png */,
+				B17065751AA45FE70080E311 /* 7-hipmob-send-instate.png */,
+				B17065761AA45FE70080E311 /* 7-hipmob-webview-back.png */,
+				B17065771AA45FE70080E311 /* 7-hipmob-webview-back@2x.png */,
+				B17065781AA45FE70080E311 /* 7-hipmob-webview-forward.png */,
+				B17065791AA45FE70080E311 /* 7-hipmob-webview-forward@2x.png */,
+				B170657A1AA45FE70080E311 /* attach.overstate.png */,
+				B170657B1AA45FE70080E311 /* attach.overstate@2x.png */,
+				B170657C1AA45FE70080E311 /* attach.png */,
+				B170657D1AA45FE70080E311 /* attach@2x.png */,
+				B170657E1AA45FE70080E311 /* hipmob-back.png */,
+				B170657F1AA45FE70080E311 /* hipmob-chat-pressed.png */,
+				B17065801AA45FE70080E311 /* hipmob-chat-pressed@2x.png */,
+				B17065811AA45FE70080E311 /* hipmob-chat.png */,
+				B17065821AA45FE70080E311 /* hipmob-chat@2x.png */,
+				B17065831AA45FE70080E311 /* hipmob-chatbubble-from.png */,
+				B17065841AA45FE70080E311 /* hipmob-chatbubble-from@2x.png */,
+				B17065851AA45FE70080E311 /* hipmob-chatbubble-to.png */,
+				B17065861AA45FE70080E311 /* hipmob-chatbubble-to@2x.png */,
+				B17065871AA45FE70080E311 /* hipmob-Info.plist */,
+				B17065881AA45FE70080E311 /* hipmob-input-background-landscape.png */,
+				B17065891AA45FE80080E311 /* hipmob-input-background.png */,
+				B170658A1AA45FE80080E311 /* hipmob-input-background@2x.png */,
+				B170658B1AA45FE80080E311 /* hipmob-operator-available.png */,
+				B170658C1AA45FE80080E311 /* hipmob-operator-connecting.png */,
+				B170658D1AA45FE80080E311 /* hipmob-operator-offline.png */,
+				B170658E1AA45FE80080E311 /* hipmob-operator-unavailable.png */,
+				B170658F1AA45FE80080E311 /* hipmob-send-active.png */,
+				B17065901AA45FE80080E311 /* hipmob-send-inactive.png */,
+				B17065911AA45FE80080E311 /* hipmob-send-instate.png */,
+				B17065921AA45FE80080E311 /* hipmob-webview-back.png */,
+				B17065931AA45FE80080E311 /* hipmob-webview-back@2x.png */,
+				B17065941AA45FE80080E311 /* hipmob-webview-forward.png */,
+				B17065951AA45FE80080E311 /* hipmob-webview-forward@2x.png */,
+				B17065961AA45FE80080E311 /* imageplaceholder.png */,
+				B17065971AA45FE80080E311 /* imageplaceholder@2x.png */,
+			);
+			name = "Hipmob Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B170652D1AA45B230080E311 /* hipmob-ios-experience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B170654D1AA45B230080E311 /* Build configuration list for PBXNativeTarget "hipmob-ios-experience" */;
+			buildPhases = (
+				B170652A1AA45B230080E311 /* Sources */,
+				B170652B1AA45B230080E311 /* Frameworks */,
+				B170652C1AA45B230080E311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hipmob-ios-experience";
+			productName = "hipmob-swift-sample";
+			productReference = B170652E1AA45B230080E311 /* hipmob-swift-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B17065421AA45B230080E311 /* hipmob-swift-sampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17065501AA45B230080E311 /* Build configuration list for PBXNativeTarget "hipmob-swift-sampleTests" */;
+			buildPhases = (
+				B170653F1AA45B230080E311 /* Sources */,
+				B17065401AA45B230080E311 /* Frameworks */,
+				B17065411AA45B230080E311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17065451AA45B230080E311 /* PBXTargetDependency */,
+			);
+			name = "hipmob-swift-sampleTests";
+			productName = "hipmob-swift-sampleTests";
+			productReference = B17065431AA45B230080E311 /* hipmob-swift-sampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B17065261AA45B220080E311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Orthogonal Labs, Inc.";
+				TargetAttributes = {
+					B170652D1AA45B230080E311 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B17065421AA45B230080E311 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B170652D1AA45B230080E311;
+					};
+				};
+			};
+			buildConfigurationList = B17065291AA45B220080E311 /* Build configuration list for PBXProject "hipmob-ios-experience" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B17065251AA45B220080E311;
+			productRefGroup = B170652F1AA45B230080E311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B170652D1AA45B230080E311 /* hipmob-ios-experience */,
+				B17065421AA45B230080E311 /* hipmob-swift-sampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B170652C1AA45B230080E311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17065981AA45FE80080E311 /* 7-hipmob-back.png in Resources */,
+				B17065991AA45FE80080E311 /* 7-hipmob-chatbubble-from.png in Resources */,
+				B170659A1AA45FE80080E311 /* 7-hipmob-chatbubble-from@2x.png in Resources */,
+				B170659B1AA45FE80080E311 /* 7-hipmob-chatbubble-to.png in Resources */,
+				B170659C1AA45FE80080E311 /* 7-hipmob-chatbubble-to@2x.png in Resources */,
+				B170659D1AA45FE80080E311 /* 7-hipmob-input-background-landscape.png in Resources */,
+				B170659E1AA45FE80080E311 /* 7-hipmob-input-background.png in Resources */,
+				B170659F1AA45FE80080E311 /* 7-hipmob-input-background@2x.png in Resources */,
+				B17065A01AA45FE80080E311 /* 7-hipmob-operator-available.png in Resources */,
+				B17065A11AA45FE80080E311 /* 7-hipmob-operator-connecting.png in Resources */,
+				B17065A21AA45FE80080E311 /* 7-hipmob-operator-offline.png in Resources */,
+				B17065A31AA45FE80080E311 /* 7-hipmob-operator-unavailable.png in Resources */,
+				B17065A41AA45FE80080E311 /* 7-hipmob-send-active.png in Resources */,
+				B17065A51AA45FE80080E311 /* 7-hipmob-send-inactive.png in Resources */,
+				B17065A61AA45FE80080E311 /* 7-hipmob-send-instate.png in Resources */,
+				B17065A71AA45FE80080E311 /* 7-hipmob-webview-back.png in Resources */,
+				B17065A81AA45FE80080E311 /* 7-hipmob-webview-back@2x.png in Resources */,
+				B17065A91AA45FE80080E311 /* 7-hipmob-webview-forward.png in Resources */,
+				B17065AA1AA45FE80080E311 /* 7-hipmob-webview-forward@2x.png in Resources */,
+				B17065AB1AA45FE80080E311 /* attach.overstate.png in Resources */,
+				B17065AC1AA45FE80080E311 /* attach.overstate@2x.png in Resources */,
+				B17065AD1AA45FE80080E311 /* attach.png in Resources */,
+				B17065AE1AA45FE80080E311 /* attach@2x.png in Resources */,
+				B17065AF1AA45FE80080E311 /* hipmob-back.png in Resources */,
+				B17065B01AA45FE80080E311 /* hipmob-chat-pressed.png in Resources */,
+				B17065B11AA45FE80080E311 /* hipmob-chat-pressed@2x.png in Resources */,
+				B17065B21AA45FE80080E311 /* hipmob-chat.png in Resources */,
+				B17065B31AA45FE80080E311 /* hipmob-chat@2x.png in Resources */,
+				B17065B41AA45FE80080E311 /* hipmob-chatbubble-from.png in Resources */,
+				B17065B51AA45FE80080E311 /* hipmob-chatbubble-from@2x.png in Resources */,
+				B17065B61AA45FE80080E311 /* hipmob-chatbubble-to.png in Resources */,
+				B17065B71AA45FE80080E311 /* hipmob-chatbubble-to@2x.png in Resources */,
+				B17065B81AA45FE80080E311 /* hipmob-Info.plist in Resources */,
+				B17065B91AA45FE80080E311 /* hipmob-input-background-landscape.png in Resources */,
+				B17065BA1AA45FE80080E311 /* hipmob-input-background.png in Resources */,
+				B17065BB1AA45FE80080E311 /* hipmob-input-background@2x.png in Resources */,
+				B17065BC1AA45FE80080E311 /* hipmob-operator-available.png in Resources */,
+				B17065BD1AA45FE80080E311 /* hipmob-operator-connecting.png in Resources */,
+				B17065BE1AA45FE80080E311 /* hipmob-operator-offline.png in Resources */,
+				B17065BF1AA45FE80080E311 /* hipmob-operator-unavailable.png in Resources */,
+				B17065C01AA45FE80080E311 /* hipmob-send-active.png in Resources */,
+				B17065C11AA45FE80080E311 /* hipmob-send-inactive.png in Resources */,
+				B17065C21AA45FE80080E311 /* hipmob-send-instate.png in Resources */,
+				B17065C31AA45FE80080E311 /* hipmob-webview-back.png in Resources */,
+				B17065C41AA45FE80080E311 /* hipmob-webview-back@2x.png in Resources */,
+				B17065C51AA45FE80080E311 /* hipmob-webview-forward.png in Resources */,
+				B17065C61AA45FE80080E311 /* hipmob-webview-forward@2x.png in Resources */,
+				B17065C71AA45FE80080E311 /* imageplaceholder.png in Resources */,
+				B17065C81AA45FE80080E311 /* imageplaceholder@2x.png in Resources */,
+				B17065391AA45B230080E311 /* Main.storyboard in Resources */,
+				B170653E1AA45B230080E311 /* LaunchScreen.xib in Resources */,
+				B170653B1AA45B230080E311 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17065411AA45B230080E311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B170652A1AA45B230080E311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17065361AA45B230080E311 /* ViewController.swift in Sources */,
+				B17065341AA45B230080E311 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B170653F1AA45B230080E311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B170654A1AA45B230080E311 /* hipmob_swift_sampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B17065451AA45B230080E311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B170652D1AA45B230080E311 /* hipmob-ios-experience */;
+			targetProxy = B17065441AA45B230080E311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B17065371AA45B230080E311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B17065381AA45B230080E311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B170653C1AA45B230080E311 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B170653D1AA45B230080E311 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B170654B1AA45B230080E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B170654C1AA45B230080E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B170654E1AA45B230080E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/hipmob.framework/Headers",
+				);
+				INFOPLIST_FILE = "hipmob-swift-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5dde72f-9ab3-4e3c-85a8-5740cb0efe8f";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/hipmob-swift-sample/hipmob-swift-sample-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		B170654F1AA45B230080E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/hipmob.framework/Headers",
+				);
+				INFOPLIST_FILE = "hipmob-swift-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5dde72f-9ab3-4e3c-85a8-5740cb0efe8f";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/hipmob-swift-sample/hipmob-swift-sample-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B17065511AA45B230080E311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hipmob-swift-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hipmob-swift-sample.app/hipmob-swift-sample";
+			};
+			name = Debug;
+		};
+		B17065521AA45B230080E311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hipmob-swift-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hipmob-swift-sample.app/hipmob-swift-sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B17065291AA45B220080E311 /* Build configuration list for PBXProject "hipmob-ios-experience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B170654B1AA45B230080E311 /* Debug */,
+				B170654C1AA45B230080E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B170654D1AA45B230080E311 /* Build configuration list for PBXNativeTarget "hipmob-ios-experience" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B170654E1AA45B230080E311 /* Debug */,
+				B170654F1AA45B230080E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17065501AA45B230080E311 /* Build configuration list for PBXNativeTarget "hipmob-swift-sampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17065511AA45B230080E311 /* Debug */,
+				B17065521AA45B230080E311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B17065261AA45B220080E311 /* Project object */;
+}
